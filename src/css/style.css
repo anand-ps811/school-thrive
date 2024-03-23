@@ -101,7 +101,41 @@ li a {
     /* max-width: 1440px; */
     margin: auto;
 }
+.nav_menu ul li a:hover{
+    background-color: #96BB7C;
+    color: #fff;
+}
+.nav_menu a{
+    padding: 16px;
+}
 
+/*dropdown */
+
+.nav_menu ul li{
+    position: relative;
+}
+ul.dropdown{
+    flex-direction: column;
+    background-color:#e8f0f4;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    top: 33px;
+    left: 0;
+    gap: 5px;
+    color: #fff;
+    visibility: hidden;
+}
+.nav_menu ul li:hover ul.dropdown{
+    visibility: visible;
+    opacity: 1;
+}
+ul.dropdown li{
+    display: block;
+}
+.dropdown a{
+    display: block;
+}
 /* 
 h1 h2 h3 h4 h5 h6 *{
     margin-top: 0;
