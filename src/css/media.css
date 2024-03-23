@@ -1,339 +1,441 @@
-.container{
+.container {
     /* border-color: rgb(42, 165, 97); */
     /* border-radius: 5px; */
     /* border: solid greenyellow; */
-    
-}
-@media screen and (max-width:1069px){
-   .nav_btn{
-    gap:19px;
-   } 
-   .navbar{
-    gap:30px;
-   }
- .nav_menu ul{
-    gap:10px;
- } 
- .container_banner{
-    padding: 0px 20PX 0PX 20PX ;
- }
- .banner_flex{
-flex-direction: column-reverse;
- }
- .product_row{
-    grid-template-columns: repeat(2,1fr);
- }
- .testi_card{
-    grid-template-columns: repeat(2,1fr);
- }
- .full_cards{
-    grid-template-columns: repeat(2,1fr);
- }
- .scf_flex{
-    flex-direction: column-reverse;
-    align-items: center;
-    gap: 10px;
- }
- .four_text{
-    align-items: center;
-    gap: 25px;
-    
- }
- .four_text h2{
-    font-size: 35px;
- }
- .footer_grid{
-    grid-template-columns: repeat(3,1fr);
-    gap: 35px;
- }
- .company_info{
-    gap: 20px;
- }
- .banner_content h5{
-    text-align: center;
-    font-size: 12px;
-}
-.banner_content h1{
-    font-size: 30px;
-    max-width: 260px;
-    line-height: 35px;
-}
-.banner_text{
-    width: 81%;
-}
-.banner_btns{
-    justify-content: center;
-    gap: 10px;
-}
 
 }
-@media screen and (max-width:768px){
-    .nav_menu ul{
+
+@media screen and (max-width:1069px) {
+    .nav_btn {
+        gap: 19px;
+    }
+
+    .navbar {
+        gap: 30px;
+    }
+
+    .nav_menu ul {
+        gap: 10px;
+    }
+
+    .container_banner {
+        padding: 0px 20PX 0PX 20PX;
+    }
+
+    .banner_flex {
+        flex-direction: column-reverse;
+    }
+
+    .product_row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .testi_card {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .full_cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .scf_flex {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .four_text {
+        align-items: center;
+        gap: 25px;
+
+    }
+
+    .four_text h2 {
+        font-size: 35px;
+    }
+
+    .footer_grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 35px;
+    }
+
+    .company_info {
+        gap: 20px;
+    }
+
+    .banner_content h5 {
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .banner_content h1 {
+        font-size: 30px;
+        max-width: 260px;
+        line-height: 35px;
+    }
+
+    .banner_text {
+        width: 81%;
+    }
+
+    .banner_btns {
+        justify-content: center;
+        gap: 10px;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .txt_btn {
         display: none;
     }
-    .product_row{
-        grid-template-columns: repeat(1,1fr);
-     }
-     .text_flex{
+
+    .nav_menu ul {
+        display: none;
+    }
+
+    #check_box:checked~.nav_menu ul {
         display: flex;
+        top: 65px;
+        left: 0px;
+        width: 128px;
+        background-color: #d0f7b5;
+        position: fixed;
+        HEIGHT: calc(100% - 50%);
         flex-direction: column;
-        align-items: center;
-     }
-    .pro_card{
-        display: flex;
-        flex-direction:row;
-        gap: 20px;
-        
+        gap: 26px;
     }
-    .client_cards{
-        justify-content:center;
-        align-items: center;
-       }
-       .full_cards{
-        grid-template-columns: repeat(1,1fr);
-        }
-        .numbers h5{
-            font-size: 10px;
-        }
-        .numbers h1{
-            font-size: 45px;
-        }
-        .footer_grid{
-            grid-template-columns: repeat(2,1fr);
+    .nav_menu a{
+        padding: 10px;
+    }
+}
 
-        }
-        .t_text {
-            display: flex;
-            align-items: center;
-        }
-        .t_text p{
-            text-align: center;
-            align-items: center;
-            font-size: 15px;
-        }
-        .t_text h2{
-            display: flex;
-            font-size: 30px;
-            align-items: center;
-            justify-content: center;
-        }
-        .banner_content h1{
-            font-size: 49px;
-        line-height: 50px;
-        text-align: center;
-        }
+.open_bar {
+    visibility: visible;
+    opacity: 1;
+}
 
-        .banner_content{
-            gap: 20px;
-            align-items: center;
-        }
-        .banner_content h4{
-            text-align: center;
-        }
-        .text{
-            align-items: center;
-            text-align: center;
-        }
-        .text h2{
-            text-align: center;
-        }
-        .text p{
-            font-size: 15px;
-            text-align: center;
-            /* width: auto; */
-            max-width: 380px;
-        }
-        .card_rating{
-            padding: 30px 60px 40px 60px;
-        }
-        .four_text h2{
-            font-size: 30px;
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-            display:flex;
-            flex-direction: column;
-        }
+.product_row {
+    grid-template-columns: repeat(1, 1fr);
+}
 
-    .main_contant{
-        align-items: center;
-    }
-    .main_contant p{
-        text-align: center;
-    }
-    .four_text p{
-        text-align: center;
-    }
-    .banner{
-        padding-bottom: 30px;
-    
-  
-} 
- 
-@media screen and (max-width:735px){
-       .pro_card{
+.text_flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pro_card {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+}
+
+.client_cards {
+    justify-content: center;
+    align-items: center;
+}
+
+.full_cards {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.numbers h5 {
+    font-size: 10px;
+}
+
+.numbers h1 {
+    font-size: 45px;
+}
+
+.footer_grid {
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.t_text {
+    display: flex;
+    align-items: center;
+}
+
+.t_text p {
+    text-align: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+.t_text h2 {
+    display: flex;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner_content h1 {
+    font-size: 49px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.banner_content {
+    gap: 20px;
+    align-items: center;
+}
+
+.banner_content h4 {
+    text-align: center;
+}
+
+.text {
+    align-items: center;
+    text-align: center;
+}
+
+.text h2 {
+    text-align: center;
+}
+
+.text p {
+    font-size: 15px;
+    text-align: center;
+    /* width: auto; */
+    max-width: 380px;
+}
+
+.card_rating {
+    padding: 30px 60px 40px 60px;
+}
+
+.four_text h2 {
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.main_contant {
+    align-items: center;
+}
+
+.main_contant p {
+    text-align: center;
+}
+
+.four_text p {
+    text-align: center;
+}
+
+.banner {
+    padding-bottom: 30px;
+
+
+}
+
+@media screen and (max-width:735px) {
+    .pro_card {
         flex-direction: column;
-       }
-       .testi_card{
-        grid-template-columns: repeat(1,1fr);
-       }
-       .main_contant{
+    }
+
+    .testi_card {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .main_contant {
         align-items: center;
-       }
-       .main_contant p{
+    }
+
+    .main_contant p {
         align-items: center;
         font-size: 12px;
         width: auto;
         text-align: center;
     }
-    .main_contant h2{
-        font-size:38px;
+
+    .main_contant h2 {
+        font-size: 38px;
         text-align: center;
     }
-    .main_contant h6{
+
+    .main_contant h6 {
         font-size: 10px;
     }
-    .container_grid{
+
+    .container_grid {
         font-size: small;
         gap: 25px;
     }
-    .btn{
+
+    .btn {
         padding: 10px 15px 10px 15px;
     }
-    .count_grid{
-        grid-template-columns: repeat(2,1fr);
+
+    .count_grid {
+        grid-template-columns: repeat(2, 1fr);
     }
-    .course_text h2{
+
+    .course_text h2 {
         font-size: 30px;
     }
-    .four_text p{
+
+    .four_text p {
         text-align: center;
         font-size: 12px;
     }
-    .four_text{
+
+    .four_text {
         text-align: center;
     }
-    .t_text p{
+
+    .t_text p {
         text-align: center;
         align-items: center;
         font-size: 12px;
         max-width: 319px;
     }
-    .course_text p{
+
+    .course_text p {
         font-size: 12PX;
     }
-    .brand_logos{
-        grid-template-columns: repeat(3,1fr);
+
+    .brand_logos {
+        grid-template-columns: repeat(3, 1fr);
     }
-    .bbtn{
+
+    .bbtn {
         font-size: 10px;
         padding: 10px 17px 9px 9px;
-     }
-     .bbtn_ln{
+    }
+
+    .bbtn_ln {
         font-size: 10px;
         padding: 10px 17px 9px 9px;
-     }
-     .banner{
+    }
+
+    .banner {
         padding-bottom: 30px;
-     }
-     .banner_content h5{
+    }
+
+    .banner_content h5 {
         text-align: center;
         font-size: 12px;
     }
-    .banner_content h1{
+
+    .banner_content h1 {
         font-size: 25px;
         max-width: 260px;
     }
-    .banner_text{
+
+    .banner_text {
         width: 81%;
     }
 }
-@media screen and (max-width:475px){
-    
-    .banner_content h1{
+
+@media screen and (max-width:475px) {
+
+    .banner_content h1 {
         font-size: 30px;
         line-height: 35px;
         text-align: center;
     }
-    .banner_content h4{
+
+    .banner_content h4 {
         font-size: 15px;
         text-align: center;
     }
-    .btn{
+
+    .btn {
         padding: 15px 5px 15px 8px;
     }
-    .txt_btn{
-        display: none;
+
+    .footer_grid {
+        grid-template-columns: repeat(1, 1fr);
     }
-    .footer_grid{
-        grid-template-columns: repeat(1,1fr);
-    }
-    .search{
+
+    .search {
         width: auto;
     }
-    .four_text p{
+
+    .four_text p {
         max-width: 260px;
     }
-    .four_text h2{
+
+    .four_text h2 {
         font-size: 25px;
         max-width: 260px;
     }
-    .t_text p{
+
+    .t_text p {
         max-width: 260px;
     }
-    .t_text h2{
+
+    .t_text h2 {
         max-width: 160px;
         font-size: 25px;
         line-height: 29px;
-        text-align:center;
+        text-align: center;
     }
-    .main_contant p{
+
+    .main_contant p {
         max-width: 260px;
     }
-    .course_text p{
+
+    .course_text p {
         max-width: 260px;
         height: 0;
     }
-    .search{
+
+    .search {
         max-width: 160px;
         padding: 5px;
     }
-    .btn.txt_btn.outline{
+
+    .btn.txt_btn.outline {
         display: inline;
     }
-    .btn{
+
+    .btn {
         padding: 10px;
     }
-    .pro_card{
+
+    .pro_card {
         max-width: 260px;
     }
-    .icons_img{
-    top: 185px;
-    left: 60px;
+
+    .icons_img {
+        top: 185px;
+        left: 60px;
     }
-    .rating{
-     max-width: 260px;
+
+    .rating {
+        max-width: 260px;
     }
-    .navbar{
+
+    .navbar {
         gap: 5px;
     }
-    .nav_menu{
+
+    .nav_menu {
         flex: 0%;
     }
-    .tail_grid{
+
+    .tail_grid {
         flex-direction: column-reverse;
     }
-    .banner_content h5{
+
+    .banner_content h5 {
         text-align: center;
         font-size: 12px;
     }
-    .banner_content h1{
+
+    .banner_content h1 {
         font-size: 25px;
         max-width: 260px;
     }
-    .banner_text{
+
+    .banner_text {
         width: 81%;
     }
 }
-
-
