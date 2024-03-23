@@ -98,10 +98,10 @@
         display: flex;
         top: 65px;
         left: 0px;
-        width: 128px;
+        width: 100px;
         background-color: #d0f7b5;
         position: fixed;
-        HEIGHT: calc(100% - 50%);
+        HEIGHT: calc(100% - 60%);
         flex-direction: column;
         gap: 20px;
     }
