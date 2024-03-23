@@ -103,7 +103,7 @@
         position: fixed;
         HEIGHT: calc(100% - 50%);
         flex-direction: column;
-        gap: 26px;
+        gap: 20px;
     }
     .nav_menu a{
         padding: 10px;
