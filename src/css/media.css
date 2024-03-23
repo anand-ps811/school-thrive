@@ -89,7 +89,9 @@
     .txt_btn {
         display: none;
     }
-
+    .btn.txt_btn.outline {
+        display: inline;
+    }
     .nav_menu ul {
         display: none;
     }
@@ -97,7 +99,7 @@
     #check_box:checked~.nav_menu ul {
         display: flex;
         top: 65px;
-        left: 0px;
+        left: 10px;
         width: 100px;
         background-color: #d0f7b5;
         position: fixed;
@@ -344,6 +346,7 @@
     .banner_content h4 {
         font-size: 15px;
         text-align: center;
+        line-height: 20px;
     }
 
     .btn {
@@ -437,5 +440,8 @@
 
     .banner_text {
         width: 81%;
+    }
+    .banner_content{
+        gap: 1px;
     }
 }
