@@ -12,8 +12,8 @@ img{
     margin: auto;
     display: flex;
     align-items: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     justify-content: space-around;
      gap: 10px; 
 }
@@ -24,7 +24,7 @@ img{
     margin: 0;
     position: fixed;
     width: 100%;
-    z-index: 997;
+    z-index: 999;
     /* width: 100%; */
 }
 .banner {
@@ -79,7 +79,9 @@ li a {
 
 
 }
-
+.hamber{
+    padding: 8px 35px ;
+}
 .txt_btn {
     color: #96BB7C;
     font-size: 14px;
@@ -106,41 +108,16 @@ li a {
     /* max-width: 1440px; */
     margin: auto;
 }
-.nav_menu ul li a:hover{
-    background-color: #96BB7C;
-    color: #fff;
-}
+
 .nav_menu a{
     padding: 16px;
 }
 
 /*dropdown */
+#check_drop{
+    display: none;
+}
 
-.nav_menu ul li{
-    position: relative;
-}
-ul.dropdown{
-    flex-direction: column;
-    background-color:#e8f0f4;
-    position: absolute;
-    cursor: pointer;
-    opacity: 0;
-    top: 33px;
-    left: 0;
-    gap: 5px;
-    color: #fff;
-    visibility: hidden;
-}
-.nav_menu ul li:hover ul.dropdown{
-    visibility: visible;
-    opacity: 1;
-}
-ul.dropdown li{
-    display: block;
-}
-.dropdown a{
-    display: block;
-}
 /* 
 h1 h2 h3 h4 h5 h6 *{
     margin-top: 0;
@@ -149,9 +126,9 @@ h1 h2 h3 h4 h5 h6 *{
     display: none;
 }
 .open_bar{
-    visibility: hidden;
+    visibility:hidden;
     opacity: 0;
-    /* display: none; */
+    /* display: none;  */
 }
 
 .banner {
@@ -180,6 +157,9 @@ h1 h2 h3 h4 h5 h6 *{
     flex: 1;
 
 }
+.dropdown{
+    display: none;
+}
 
 .banner_content h5 {
     font-family: Montserrat;
@@ -201,7 +181,9 @@ h1 h2 h3 h4 h5 h6 *{
     color: #252B42;
 
 }
-
+.dropdown{
+    display: none;
+}
 .banner_content h4 {
     max-width: 458px;
     font-family: Montserrat;
@@ -223,7 +205,9 @@ h1 h2 h3 h4 h5 h6 *{
     justify-content: end;
 
 }
-
+.drop_button{
+    display: none;
+}
 
 
 .banner_content * {
@@ -649,7 +633,7 @@ h1 h2 h3 h4 h5 h6 *{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
-
+/* display: flex; */
 }
 
 .card_contant p {
