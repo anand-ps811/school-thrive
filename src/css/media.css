@@ -114,14 +114,15 @@
         top: 80px;
         left: 10px;
         width: 112px;
-        background-color: #454a5333;
-        backdrop-filter:blur(10px);
+        background-color: #96BB7C;
+        backdrop-filter:blur(1px);
         position: fixed;
-        HEIGHT: calc(100% - 43%);
+        /* HEIGHT: calc(100% - 43%); */
         flex-direction: column;
         gap: 20px;
         align-items:flex-start;
-        z-index: 1;
+        color: #fff;
+        /* z-index: 1; */
         /* justify-content: center; */
     }
     #check_box:checked~ label i::before{
@@ -134,8 +135,10 @@
         left: 100px;
         visibility: hidden;
         opacity: 0;
-
-    }
+   }
+   .nav_menu ul li a{
+    color: #fff;
+   } 
     #check_drop:checked~ ul.dropdown{
         visibility: visible;
         opacity: 1;
@@ -145,6 +148,10 @@
         display: flex;
         transition:0.2s ease-in-out;
         width: 100%;
+        background-color:#96BB7C;
+        color: #fff;
+        /* background-color: #efefef53; */
+        /* backdrop-filter:blur(50px); */
        }
        .drop_button{
         display: block;
