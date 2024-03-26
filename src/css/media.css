@@ -1,16 +1,17 @@
 /* .container { */
-    /* border-color: rgb(42, 165, 97); */
-    /* border-radius: 5px; */
-    /* border: solid greenyellow; */
+/* border-color: rgb(42, 165, 97); */
+/* border-radius: 5px; */
+/* border: solid greenyellow; */
 
 /* } */
-@media screen and (max-width: 1076px){
-    .product_row{
+@media screen and (max-width: 1076px) {
+    .product_row {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .pro_card{
+
+    .pro_card {
         display: flex;
         flex-direction: row;
         gap: 10px;
@@ -20,10 +21,6 @@
 @media screen and (max-width:970px) {
     .nav_btn {
         gap: 19px;
-    }
-
-    .navbar {
-        /* gap: 20px; */
     }
 
     .nav_menu ul {
@@ -40,15 +37,22 @@
 
     .product_row {
         grid-template-columns: repeat(2, 1fr);
+        gap: 75px;
     }
 
-    .testi_card {
-        grid-template-columns: repeat(2, 1fr);
+    .title {
+        text-align: center;
+        display: flex;
+        justify-content: center;
     }
 
-    .full_cards {
+    /* .testi_card {
+        grid-template-columns: repeat(3, 1fr);
+    } */
+
+    /* .full_cards {
         grid-template-columns: repeat(2, 1fr);
-    }
+    } */
 
     .scf_flex {
         flex-direction: column-reverse;
@@ -87,7 +91,7 @@
     }
 
     .banner_text {
-        width: 81%;
+        /* width: 81%; */
     }
 
     .banner_btns {
@@ -95,237 +99,259 @@
         gap: 10px;
     }
 
-
-
     .txt_btn {
         display: none;
     }
+
     .btn.txt_btn.outline {
         display: inline;
     }
+
     .nav_menu ul {
         display: none;
+
     }
-    .brandname h3{
+
+    .brandname h3 {
         flex: 1;
     }
+
+    ul.dropdown {
+        left: 100px;
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+    }
+
     #check_box:checked~.nav_menu ul {
         display: flex;
         top: 80px;
         left: 10px;
-        width: 112px;
+        width: 145px;
         background-color: #6d855f;
         border: #6d855f transparent;
         border-radius: 10px;
-        backdrop-filter:blur(1px);
+        /* backdrop-filter: blur(1px); */
         position: fixed;
-        /* HEIGHT: calc(100% - 43%); */
         flex-direction: column;
         gap: 20px;
-        align-items:flex-start;
         color: #fff;
-        /* z-index: 1; */
-        justify-content: center;
+        padding: 15px;
     }
-    .open_bar{
-        width: 20px;
+
+    .check_drop label i{
+        padding-left: 50px;
+        
     }
-    #check_box:checked~ label i::before{
-      content:'\f00d';
-    }
-    .nav_menu a{
-        padding: 10px;
-    }
-    ul.dropdown{
-        left: 100px;
-        visibility: hidden;
-        opacity: 0;
-   }
-   .nav_menu ul li a{
-    color: #fff;
-   } 
-    #check_drop:checked~ ul.dropdown{
+    
+
+    #check_drop:checked~ul.dropdown {
         visibility: visible;
         opacity: 1;
         display: block;
-        left: 111px;
-        top: 50px;
+        left: 24px;
         display: flex;
-        transition:0.2s ease-in-out;
-        width: 100%;
-        height: 125px;
-        background-color:#6d855f;
+        gap: 10px;
+        position: relative;
+        top: 7px;
+        width: 72%;
+        height: 80px;
+        background-color: #6d855f;
         color: #fff;
         border: #6d855f transparent;
         border-radius: 10px;
-        /* background-color: #efefef53; */
-        /* backdrop-filter:blur(50px); */
-       }
-       .drop_button{
+    }
+
+    .open_bar {
+        width: 20px;
+    }
+
+    #check_box:checked~label i::before {
+        content: '\f00d';
+    }
+
+    .nav_menu a {
+        padding: 10px;
+    }
+
+    .nav_menu ul li a {
+        color: #fff;
+    }
+
+    .drop_button {
         display: block;
-        
-       }
-    
+
+    }
+
     /* #check_box:checked~.nav_menu ul:hover ul.dropdown{
         background-color: rgba(250, 235, 215, 0.547);
     } */
 
-.product_row {
-    grid-template-columns: repeat(1, 1fr);
+    .product_row {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .text_flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pro_card {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+
+    }
+
+    .client_cards {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .full_cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .numbers h5 {
+        font-size: 13px;
+    }
+
+    .numbers h1 {
+        font-size: 45px;
+    }
+
+    .footer_grid {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .t_text {
+        display: flex;
+        align-items: center;
+    }
+
+    .t_text p {
+        text-align: center;
+        align-items: center;
+        font-size: 15px;
+    }
+
+    .t_text h2 {
+        display: flex;
+        font-size: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner_content h1 {
+        font-size: 49px;
+        line-height: 50px;
+        text-align: center;
+    }
+
+    .banner_content {
+        gap: 20px;
+        align-items: center;
+    }
+
+    .banner_content h4 {
+        text-align: center;
+    }
+
+    .text {
+        align-items: center;
+        text-align: center;
+    }
+
+    .text h2 {
+        text-align: center;
+    }
+
+    .text p {
+        font-size: 12px;
+        text-align: center;
+        /* width: auto; */
+        max-width: 380px;
+    }
+
+    .card_rating {
+        padding: 30px 60px 40px 60px;
+    }
+
+    .four_text h2 {
+        font-size: 30px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main_contant {
+        align-items: center;
+    }
+
+    .main_contant p {
+        text-align: center;
+    }
+
+    .four_text p {
+        text-align: center;
+    }
+
+    .banner {
+        padding-bottom: 30px;
+
+    }
+
+    .open_bar {
+        visibility: visible;
+        opacity: 1;
+        /* display: block; */
+    }
+
+    .product {
+        display: inline-block;
+    }
 }
 
-.text_flex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.pro_card {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-
-}
-
-.client_cards {
-    justify-content: center;
-    align-items: center;
-}
-
-.full_cards {
-    grid-template-columns: repeat(1, 1fr);
-}
-
-.numbers h5 {
-    font-size: 10px;
-}
-
-.numbers h1 {
-    font-size: 45px;
-}
-
-.footer_grid {
-    grid-template-columns: repeat(2, 1fr);
-
-}
-
-.t_text {
-    display: flex;
-    align-items: center;
-}
-
-.t_text p {
-    text-align: center;
-    align-items: center;
-    font-size: 15px;
-}
-
-.t_text h2 {
-    display: flex;
-    font-size: 30px;
-    align-items: center;
-    justify-content: center;
-}
-
-.banner_content h1 {
-    font-size: 49px;
-    line-height: 50px;
-    text-align: center;
-}
-
-.banner_content {
-    gap: 20px;
-    align-items: center;
-}
-
-.banner_content h4 {
-    text-align: center;
-}
-
-.text {
-    align-items: center;
-    text-align: center;
-}
-
-.text h2 {
-    text-align: center;
-}
-
-.text p {
-    font-size: 15px;
-    text-align: center;
-    /* width: auto; */
-    max-width: 380px;
-}
-
-.card_rating {
-    padding: 30px 60px 40px 60px;
-}
-
-.four_text h2 {
-    font-size: 30px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-}
-
-.main_contant {
-    align-items: center;
-}
-
-.main_contant p {
-    text-align: center;
-}
-
-.four_text p {
-    text-align: center;
-}
-
-.banner {
-    padding-bottom: 30px;
-
-}
-.open_bar {
-    visibility: visible;
-    opacity: 1;
-    /* display: block; */
-}
-}
-@media screen and (min-width:969px){
-    .nav_menu ul li a:hover{
+@media screen and (min-width:969px) {
+    .nav_menu ul li a:hover {
         background-color: #96bb7ca2;
         color: #fff;
     }
-    .nav_menu ul li{
+
+    .nav_menu {
         position: relative;
     }
-    
-    .dropdown{
+
+    .dropdown {
         flex-direction: column;
-        background-color:#e8f0f465;
+        background-color: #e8f0f465;
         position: absolute;
-        /* cursor: pointer; */
         opacity: 0;
         top: 33px;
-        left: 0px;
+        left: 85px;
         gap: 5px;
         color: #fff;
         visibility: hidden;
     }
-    .nav_menu ul li:hover .dropdown{
+
+    .nav_menu ul li:hover .dropdown {
         visibility: visible;
         opacity: 1;
         display: block;
     }
-    ul.dropdown li{
+
+    ul.dropdown li {
         display: block;
     }
-    .dropdown a{
+
+    .dropdown a {
         display: block;
     }
-        
+
 }
 
 @media screen and (max-width:735px) {
@@ -334,7 +360,7 @@
     }
 
     .testi_card {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .main_contant {
@@ -381,6 +407,12 @@
 
     .four_text {
         text-align: center;
+        height: auto;
+    }
+
+    .full_cards {
+        gap: 30px;
+        margin-bottom: 50px;
     }
 
     .t_text p {
@@ -424,10 +456,44 @@
     }
 
     .banner_text {
-        width: 81%;
+        /* width: 81%; */
     }
-    .hamber{
-        padding: 6px 39px;
+
+    .hamber {
+        padding: 6px 38px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .text h2 {
+        font-size: 30px;
+        max-width: 100%;
+    }
+
+    .site_contant {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .full_cards {
+        grid-template-columns: repeat(1, 1fr)
+    }
+
+    .figma_text h6 {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .tail_grid {
+        gap: 15px;
+    }
+
+    .social_icons {
+        gap: 15px;
+    }
+
+    .social_icons a {
+        font-size: 20px;
     }
 }
 
@@ -463,7 +529,7 @@
     }
 
     .four_text h2 {
-        font-size: 25px;
+        font-size: 20px;
         max-width: 260px;
     }
 
@@ -471,11 +537,20 @@
         max-width: 260px;
     }
 
+    .testi_card {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
     .t_text h2 {
-        max-width: 160px;
-        font-size: 25px;
+        max-width: 218px;
+        font-size: 20px;
         line-height: 29px;
         text-align: center;
+    }
+
+    .text h2 {
+        font-size: 24px;
+        max-width: 100%;
     }
 
     .main_contant p {
@@ -495,6 +570,7 @@
     .btn.txt_btn.outline {
         display: inline;
     }
+
 
     .btn {
         padding: 10px;
@@ -538,14 +614,17 @@
     .banner_text {
         width: 81%;
     }
-    .banner_content{
+
+    .banner_content {
         gap: 10px;
     }
-    .banner_image{
+
+    .banner_image {
         display: none;
     }
-    .hamber{
-        padding: 6px 39px;
+
+    .hamber {
+        padding: 6px 38px;
         /* background-color: #6d855f; */
     }
 }
